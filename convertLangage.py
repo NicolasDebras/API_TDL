@@ -21,8 +21,12 @@ def convertLanguage(p):
     elif p[0] == 'SELECT':
         print(p[2])
         if  p[2] == None:
+            print("Error select not good")
             return
-        Cselect(p[2])
+        if "ID" not in entityTable or "TITLE" not in entityTable:
+            print("Error not good Keyword just ID and TITLE accepted")
+            return
+        Cselect(p[2], entityTable)
 
 
 def entityExtract(entity, entityTable):

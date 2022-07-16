@@ -1,4 +1,3 @@
-from msilib.schema import tables
 import requests
 import pprint
 

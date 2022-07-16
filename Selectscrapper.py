@@ -82,7 +82,7 @@ def pro(dictres, list_content):
 def createUrl(id):
     return "https://www.aladom.fr/" + id
 
-def Cselect(id):
+def Cselect(id , entityTable):
     url = createUrl(id)
     txtpage = request(url)
     print(url)
